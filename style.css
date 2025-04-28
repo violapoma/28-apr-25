@@ -1,0 +1,56 @@
+
+/* ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron */
+.jumbotron h1 {
+    color: palevioletred;
+}
+/* ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar */
+nav * {
+    color: blueviolet;
+}
+/* ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
+.jumbotron a {
+    background-color: pink;
+    border-radius: 5px 30px 5px 30px;
+    padding: 0.5em;
+}
+/* ESERCIZIO 4) Crea un selettore per selezionare il primo blog post */
+.blog-post:first-of-type {
+    color: violet;
+}
+/* ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso */
+.blog-post:first-of-type hr {
+    background-color: red;
+}
+/* ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar */
+nav a:nth-child(even) {
+    color: green !important; /* altrimenti ha priorità quello del tag <style>*/
+}
+/* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
+/* perché se scrivo solo aside ol:first-of-type li a NON FUNZIONA? */
+aside div:nth-child(2) ol:first-of-type li a{
+    color: maroon; 
+}
+/* ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post */
+.blog-post:nth-child(3) h2+p a{
+    color: chocolate !important;
+}
+/* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post */
+.blog-post:nth-child(4) ul li:nth-child(2) {
+    background-color: chartreuse ;
+}
+/* ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
+body footer + a {
+    background-color: plum;
+}
+/* ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
+nav:last-of-type a:nth-child(2) {
+    background-color: black;
+}
+/* ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer */
+.blog-footer > p > a:last-of-type {
+    color: teal !important;
+}
+
+.blog-post h2+p a {
+    color: mediumpurple !important;
+}
