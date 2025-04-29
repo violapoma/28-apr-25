@@ -22,8 +22,13 @@ nav * {
     background-color: red;
 }
 /* ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar */
-nav a:nth-child(even) {
-    color: green !important; /* altrimenti ha priorità quello del tag <style>*/
+nav:first-of-type a:nth-child(even) {
+    color: green !important;  /*altrimenti ha priorità quello del tag <style>*/
+    border: 5px solid purple;
+} 
+/* avevo capito male la parte da selezionare, avevo considerato la prima nav solo con degli span dentro, non li avevo intesi come link; questa è quella aggiornata*/
+header + nav span:nth-child(even) {
+    border: 3px solid purple;
 }
 /* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
 /* perché se scrivo solo aside ol:first-of-type li a NON FUNZIONA? */
